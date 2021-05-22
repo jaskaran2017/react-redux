@@ -12,9 +12,9 @@ export const AddToCart = (data) => {
 };
 
 
-// export const RemoveFromCart = (data) => {
-//   return {
-//     type: REMOVE_FROM_CART,
-//     data: data,
-//   };
-// };
+export const RemoveFromCart = (data) => {
+  return {
+    type: REMOVE_FROM_CART,
+    data: data,
+  };
+};
