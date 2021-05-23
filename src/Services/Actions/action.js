@@ -1,4 +1,4 @@
-import { ADD_TO_CART, REMOVE_FROM_CART } from "../constants";
+import { ADD_TO_CART, REMOVE_TO_CART } from "../constants";
 /* this action.js will take data from react and pass that to redux store so that store will perform accordingly. e.g.:- when user will click to add button, then store will add data and vise versa */
 export const AddToCart = (data) => {
   // console.log("action", data);
@@ -8,9 +8,11 @@ export const AddToCart = (data) => {
   };
 };
 
-// export const RemoveFromCart = (data) => {
-//   return {
-//     type: REMOVE_FROM_CART,
-//     data: data,
-//   };
-// };
+export const RemoveToCart = () => {
+  console.log("action");
+  return {
+    type: REMOVE_TO_CART,
+    
+  };
+};
+ 

@@ -1,4 +1,4 @@
-import { ADD_TO_CART } from "../constants";
+import { ADD_TO_CART, REMOVE_TO_CART } from "../constants";
 
 const initialState = {
   cartData: [], //this blank array will collect all the items data coming from action and send to store.
@@ -10,6 +10,10 @@ export default function cartItems(state = [], action) {
     case ADD_TO_CART:
       // console.warn("reduce", action)
       return [...state, { cartData: action.data }];
+    case REMOVE_TO_CART:
+      // console.warn("reduce", action)
+      state.pop();
+      return [...state];
 
     default:
       return state; //this state is not related to components state. it only tells us about the cartItem array.
