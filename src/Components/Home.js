@@ -4,13 +4,6 @@ function Home(props) {
   console.log("Home", props.data);
   return (
     <div>
-      <div className="add-to-cart">
-        <span className="cart-items">{props.data.length}</span>
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7PWLrK9sjBd-bUJXjYWHLldzfhUlwmuhhfQ&usqp=CAU"
-          alt="cart-logo"
-        />
-      </div>
       <h1>Home Component</h1>
       <div className="cart-wrapper">
         <div className="item">
